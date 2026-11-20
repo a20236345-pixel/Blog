@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_40607af6d0771e9d320c16e57cb6d0bb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_40607af6d0771e9d320c16e57cb6d0bb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_40607af6d0771e9d320c16e57cb6d0bb = L.map(
+                "map_40607af6d0771e9d320c16e57cb6d0bb",
+                {
+                    center: [46.5, 1.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6d672c21fc9a9b4d9fb700b9be344cb5 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri \u0026mdash; Source: Esri, DeLorme, NAVTEQ, USGS, and others",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6d672c21fc9a9b4d9fb700b9be344cb5.addTo(map_40607af6d0771e9d320c16e57cb6d0bb);
+        
+    
+            var marker_b733080b17e273dc71da20e7d2fdebe8 = L.marker(
+                [49.64, 8.64],
+                {
+}
+            ).addTo(map_40607af6d0771e9d320c16e57cb6d0bb);
+        
+    
+            var icon_13a9ae54ed64337bc649467640d8dcf7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_370e9da2ca17e15d727f9a9800455936 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_acf8126636bd3e7bcba89ee44f934c78 = $(`<div id="html_acf8126636bd3e7bcba89ee44f934c78" style="width: 100.0%; height: 100.0%;">     <div style="text-align:center; width:220px;">         <h2>S. VETTEL</h2>         <img src="PEGA_AQUI_EL_ENLACE_DE_LA_FOTO_DE_VETTEL" width="150">         <p><b>Escudería:</b> Scuderia Ferrari</p>         <p><b>Puntaje total 2016:</b> <i>212 puntos</i></p>     </div>     </div>`)[0];
+                popup_370e9da2ca17e15d727f9a9800455936.setContent(html_acf8126636bd3e7bcba89ee44f934c78);
+            
+        
+
+        marker_b733080b17e273dc71da20e7d2fdebe8.bindPopup(popup_370e9da2ca17e15d727f9a9800455936)
+        ;
+
+        
+    
+    
+            marker_b733080b17e273dc71da20e7d2fdebe8.bindTooltip(
+                `<div>
+                     S. VETTEL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b733080b17e273dc71da20e7d2fdebe8.setIcon(icon_13a9ae54ed64337bc649467640d8dcf7);
+            
+    
+            var marker_f46e5098c71f383a5449454aa69a26d1 = L.marker(
+                [43.3614, -5.8593],
+                {
+}
+            ).addTo(map_40607af6d0771e9d320c16e57cb6d0bb);
+        
+    
+            var icon_848abe5657d7522db3c19b47d9066aa5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8456122ba4b1cd558ed917b3480ff99b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_da11ca3b906f7d557afe9154212e1fd3 = $(`<div id="html_da11ca3b906f7d557afe9154212e1fd3" style="width: 100.0%; height: 100.0%;">     <div style="text-align:center; width:220px;">         <h2>F. ALONSO</h2>         <img src="PEGA_AQUI_EL_ENLACE_DE_LA_FOTO_DE_ALONSO" width="150">         <p><b>Escudería:</b> McLaren-Honda</p>         <p><b>Puntaje total 2016:</b> <i>54 puntos</i></p>     </div>     </div>`)[0];
+                popup_8456122ba4b1cd558ed917b3480ff99b.setContent(html_da11ca3b906f7d557afe9154212e1fd3);
+            
+        
+
+        marker_f46e5098c71f383a5449454aa69a26d1.bindPopup(popup_8456122ba4b1cd558ed917b3480ff99b)
+        ;
+
+        
+    
+    
+            marker_f46e5098c71f383a5449454aa69a26d1.bindTooltip(
+                `<div>
+                     F. ALONSO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f46e5098c71f383a5449454aa69a26d1.setIcon(icon_848abe5657d7522db3c19b47d9066aa5);
+            
+</script>
+</html>
